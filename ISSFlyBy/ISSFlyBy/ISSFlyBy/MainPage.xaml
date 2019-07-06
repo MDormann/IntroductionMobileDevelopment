@@ -16,7 +16,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:ISSNowView />
+                <views:ISSLiveView />
             </x:Arguments>
         </NavigationPage>
 
@@ -27,7 +27,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:ISSPassTimeView />
+                <views:ISSFlyByView />
             </x:Arguments>
         </NavigationPage>
 
