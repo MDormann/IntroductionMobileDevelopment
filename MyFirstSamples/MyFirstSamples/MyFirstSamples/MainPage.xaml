@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyFirstSamples.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Hello World!" 
+           HorizontalOptions="Center"           
+           FontSize="Large"/>
+        
+        <Label Text="Dies ist unsere erste Xamarin.Forms Applikation" 
+           HorizontalOptions="Center"
+           FontSize="Default"/>
+
+        <Label Text="Ich laufe auf den folgenden Plattformen: iOS , Android, UWP, macOS, Tizen ..." 
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           FontSize="Medium"
+           Margin="10" />
+
+        <!-- ImageSource for UWP -->
+        <!--<Image Source="Assets/AlgorithmOfSuccess.jpg"  
+               Margin="20" />-->
+        
+        <Image Source="AlgorithmOfSuccess.jpg"  
+               Margin="20" />
+
+        <Label x:Name="textLabel"
+               Text="Hier könnte Ihre Werbung stehen."
+               Margin="10"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+        <Entry Placeholder="Ich bin ein Platzhalter!" 
+               VerticalOptions="EndAndExpand"
+               TextChanged="Entry_TextChanged"/>
+
+        <Button Text="Farbe wechseln"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

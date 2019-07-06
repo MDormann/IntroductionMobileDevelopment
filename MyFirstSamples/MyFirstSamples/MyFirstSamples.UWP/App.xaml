@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="MyFirstSamples.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyFirstSamples.UWP"
+    RequestedTheme="Light">
+
+</Application>

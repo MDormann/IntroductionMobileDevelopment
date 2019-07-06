@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ISSFlyBy.Views.ISSFlyByView">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView 
+			    x:Name="listView"
+			    IsPullToRefreshEnabled ="True"
+			    ItemsSource="{ Binding ISSFlyBy }">
+                <ListView.Header>
+                    <Label Text="Daten abgerufen am: 22.06.2019 15:26:00 Uhr."/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Timestamp}" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding Duration}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

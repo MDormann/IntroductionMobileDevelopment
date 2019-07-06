@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    x:Class="ISSFlyBy.Views.ISSLiveView"
+    ios:Page.UseSafeArea="true"
+    ios:Page.LargeTitleDisplay="Automatic"
+    Title="Live">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map 
+                x:Name="mapControl"
+                IsShowingUser="true"
+                MapType="Hybrid"
+                ItemsSource="{Binding Positions}">
+                
+                <maps:Map.ItemTemplate>
+                    <DataTemplate>
+                        <maps:Pin Position="{Binding ISS_Position.Position}" 
+                                  Label="{Binding Timestamp}"/>
+                    </DataTemplate>
+                </maps:Map.ItemTemplate>
+            </maps:Map>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
