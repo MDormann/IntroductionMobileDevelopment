@@ -40,7 +40,9 @@ namespace ISSFlyBy.ViewModels
                             MainThread.BeginInvokeOnMainThread(() =>
                             {
                                 ISSCurrentPosition = currentPosition;
-                                Positions.Clear();
+                                
+                                //Wenn diese Zeile auskommentiert ist, dann wird der ISS Verlauf dargestellt.
+                                //Positions.Clear();
                                 Positions.Add(currentPosition);
                                 
                             });

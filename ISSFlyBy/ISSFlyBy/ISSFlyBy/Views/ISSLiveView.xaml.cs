@@ -17,7 +17,7 @@ namespace ISSFlyBy.Views
             BindingContext = viewModel = new ISSLiveViewModel();
 
             // Sorgt dafür, dass beim Start die Karte komplett herausgezoomt ist.
-            mapControl.MoveToRegion(new MapSpan(mapControl.VisibleRegion.Center, 180, 180));
+            //mapControl.MoveToRegion(new MapSpan(mapControl.VisibleRegion.Center, 180, 180));
         }
     }
 }

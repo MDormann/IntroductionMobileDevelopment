@@ -18,6 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\ISSCurrentCrewView.xaml.cs">
+      <DependentUpon>ISSCurrentCrewView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ISSLiveView.xaml.cs">
       <DependentUpon>ISSLiveView.xaml</DependentUpon>
     </Compile>
@@ -29,6 +32,9 @@
   <ItemGroup>
     <EmbeddedResource Update="Views\AboutPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ISSCurrentCrewView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ISSLiveView.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -38,7 +38,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:AboutPage />
+                <views:ISSCurrentCrewView />
             </x:Arguments>
         </NavigationPage>
 

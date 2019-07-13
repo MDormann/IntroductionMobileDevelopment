@@ -7,7 +7,7 @@
     x:Class="ISSFlyBy.Views.ISSLiveView"
     ios:Page.UseSafeArea="true"
     ios:Page.LargeTitleDisplay="Automatic"
-    Title="Live">
+    Title="Live-Standort">
 
     <ContentPage.Content>
         <StackLayout>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ISSFlyBy">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
     <application android:label="ISSFlyBy.Android">
-      <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="insert API here" />
+      <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="INSERT_APIKEY_HERE" />
     </application>
 
     <!-- Google Maps for Android v2 requires OpenGL ES v2 -->

@@ -10,6 +10,8 @@ namespace ISSFlyBy
         {
             InitializeComponent();
 
+            System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+
             MainPage = new MainPage();
         }
 
