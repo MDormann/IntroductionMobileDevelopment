@@ -124,16 +124,16 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
     <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>4.0.0.425677</Version>
+      <Version>4.6.0.726</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\ISSFlyBy\ISSFlyBy.csproj">
-      <Project>{0737A26D-8A23-4B78-868D-542620539EC1}</Project>
+      <Project>{A2139AC4-D916-4341-81D1-94A6DB1472AB}</Project>
       <Name>ISSFlyBy</Name>
     </ProjectReference>
   </ItemGroup>

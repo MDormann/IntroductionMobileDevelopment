@@ -9,13 +9,22 @@
             <ListView 
 			    x:Name="listView"
 			    IsPullToRefreshEnabled ="False"
-			    ItemsSource="{ Binding ISSFlyByResponses }">
+			    ItemsSource="{ Binding ISSFlyByResponses }"
+                RowHeight="50"
+                VerticalOptions="FillAndExpand">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Risetime}" HorizontalOptions="StartAndExpand"/>
-                                <Label Text="{Binding Duration}" HorizontalOptions="EndAndExpand"/>
+                            <StackLayout Orientation="Horizontal" Margin="20,5,10,5">
+                                <StackLayout Spacing="0">
+                                    <Label Text="Datum" FontSize="Micro"/>
+                                    <Label Text="{Binding Risetime, StringFormat='{0:dd.MM.yyyy HH:mm:ss zzz}'}" HorizontalOptions="StartAndExpand"/>
+                                </StackLayout>
+                                <StackLayout Spacing="0" HorizontalOptions="EndAndExpand">
+                                    <Label Text="Dauer in sec" FontSize="Micro"/>
+                                    <Label Text="{Binding Duration}" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                                
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

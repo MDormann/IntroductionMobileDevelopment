@@ -16,6 +16,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
+                <!--<views:ISSLiveView_Tablet />-->
                 <views:ISSLiveView />
             </x:Arguments>
         </NavigationPage>

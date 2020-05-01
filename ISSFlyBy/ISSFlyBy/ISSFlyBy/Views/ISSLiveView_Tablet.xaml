@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ISSFlyBy.Views.ISSLiveView_Tablet" xmlns:pages="clr-namespace:ISSFlyBy.Views">
+    <MasterDetailPage.Master>
+        <pages:ISSFlyByView x:Name="ISSFlyByView" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:ISSLiveView />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
